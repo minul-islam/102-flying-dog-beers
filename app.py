@@ -4,29 +4,29 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Define your variables
-beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
-ibu_values=[35, 60, 85, 75]
-abv_values=[5.4, 7.1, 9.2, 4.3]
-color1='darkred'
-color2='orange'
-mytitle='Beer Comparison'
-tabtitle='beer!'
-myheading='Flying Dog Beers'
-label1='IBU'
-label2='ABV'
+steps=['Sage Maker', 'Github', 'Python', 'HeroKu']
+fun_values=[10, 5, 10, 10]
+effort_values=[5, 10, 10, 10]
+color1='red'
+color2='blue'
+mytitle='Learning Fun & Effort'
+tabtitle='Learning Topic!'
+myheading='Fun & Effort of Learning'
+label1='Fun'
+label2='Effort'
 githublink='https://github.com/austinlasseter/flying-dog-beers'
 sourceurl='https://www.flyingdog.com/beers/'
 
 ########### Set up the chart
 bitterness = go.Bar(
-    x=beers,
-    y=ibu_values,
+    x=steps,
+    y=fun_values,
     name=label1,
     marker={'color':color1}
 )
 alcohol = go.Bar(
-    x=beers,
-    y=abv_values,
+    x=steps,
+    y=effort_values,
     name=label2,
     marker={'color':color2}
 )
